@@ -1,0 +1,117 @@
+div.wrapper {
+	margin-top: 20px;
+}
+div.container {
+	max-width: 700px;
+}
+h1.site-title {
+	font-family: 'Sonsie One';
+	width: 100%;
+	text-align: center;
+	color: #F08A01;
+}
+
+ul#site-nav {
+	width: 100%;
+}
+
+ul#iste-nav li {
+	display: inline-block;
+}
+ul#site-nav li a  {
+	background-color: #B19882;
+	color: white;
+}
+
+ul#site-nav li a:hover , ul#site-nav li.active a{
+	background-color: #E6365D;
+}
+
+form.add-form input, form.add-form textarea {
+	margin-bottom: 10px;
+}
+
+form.add-form textarea {
+	height: 150px;
+}
+
+div.add-message {
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+img#site-logo {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 250px;
+	height: auto;
+}
+
+ul.sandwich-list {
+	padding: 0px;
+}
+
+section.sandwich-random {
+	font-family: 'Oswald'
+}
+
+
+ul.sandwich-list li {
+	list-style-type: none;
+	padding: 10px;
+	border-bottom: 1px #dfdfdf solid
+}
+
+ul.sandwich-list h2 {
+	font-family: 'Oswald';
+	color: #F08A01;
+}
+
+ul.sandwich-list p {
+	color: #B19882;
+}
+
+.nav-pills > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+}
+
+.nav-pills, .nav-pills {
+    text-align:center;
+}
+
+form#search input {
+	border-left: 0px;
+}
+
+form#search span {
+	background-color: transparent;
+}
+
+
+.progress-bar {
+	padding-top: 20px;
+}
+
+.loading {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}

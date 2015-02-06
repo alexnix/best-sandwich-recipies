@@ -1,0 +1,20 @@
+<form id="search">
+	<div class="input-group">
+	  <span class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
+	  <input type="text" class="form-control" placeholder="Find yourself a snack" ng-model="search">
+	</div>
+</form>
+
+<ul class="sandwich-list">
+
+	<div ng-hide="list.length" class="loading">
+		<span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>
+	</div>
+	<li ng-repeat="sandwich in list | reverse | filter:search">
+
+		<h2>{{sandwich.name}}</h2>
+		<p ng-bind-html="sandwich.recipie"></p>
+		
+	</li>
+
+</l>
