@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Best Sandwitch Ever</title> 
+    <link href='http://fonts.googleapis.com/css?family=Sonsie+One|Oswald:300' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/animate.css"> 
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css"> 
+  </head>
+
+  <body ng-app="bse">
+	  <div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1415045332060552&version=v2.0";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+  	<div class="container">
+  		<img src="img/burger.jpg" alt="Best sandwich recipies" id="site-logo"/>
+
+  		<h1 class="site-title">Best Sandwich Ever</h1>
+
+  		<div class="wrapper" ui-view></div>	
+  		
+  		<ul class="nav nav-pills" id="site-nav" ng-controller="menuCtrl">
+  			<li ng-class="checkState('best')"><a ui-sref="best">Best Recipies</a></li>
+  			<li ng-class="checkState('make')"><a ui-sref="make" ng-click="reload()">Make me a sandwitch</a></li>
+  			<li ng-class="checkState('add')"><a ui-sref="add"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Recipie</a></li>
+  		</ul>
+
+  	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+	<script src="https://cdn.firebase.com/js/client/1.1.1/firebase.js"></script>
+	<script src="https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular-sanitize.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
+ 	<script type="text/javascript" src="js/app.js"></script>
+ 	<script type="text/javascript" src="js/controllers.js"></script>
+ 	<script type="text/javascript" src="js/routes.js"></script>
+  </body>
+
+</html>
